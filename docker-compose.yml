@@ -1,0 +1,16 @@
+version: "3"
+services:
+  app:
+    build: ./centos7/
+    ports:
+      - "8888:8888"
+    privileged: true
+    volumes:
+      - ./site/:/var/www/html/:rw
+    networks:
+      - app
+    command: go run /var/www/html/test/main.go
+
+networks:
+  app:
+    driver: bridge
