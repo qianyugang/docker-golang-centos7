@@ -1,4 +1,4 @@
-# golang-centos7
+# docker-golang-centos7
 
 ## describe
 
