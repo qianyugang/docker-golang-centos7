@@ -18,6 +18,12 @@ docker-compose up -d
 docker-compose stop
 ```
 
+### exec
+
+```
+docker-compose exec app /bin/bash
+```
+
 ### host & port
 
 ```
