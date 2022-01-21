@@ -10,6 +10,7 @@ services:
     networks:
       - app
     command: go run /var/www/html/test/main.go
+    privileged: true
 
 networks:
   app:
